@@ -1,40 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Coding Quiz</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <header><h1 id = "header">Welcome to the coding Quiz!</h1></header>
-    <p class = "start">Click "start" to start the time quiz!</p>
-    <button id="start" class = "start" type="button">Start</button>
-    <div id = "timer"></div>
-    <!-- <div id = "question-one">
- <div class = "container">
-    <div id = "question" class="hide">Question</div>
-    <div id= "answer-btns" class="btn-grid">
-        <button class="btn hide">Answer 1</button>
-        <button class="btn hide">Answer 2</button
-        <button class="btn hide">Answer 3</button>
-        <button class="btn hide">Answer 4</button>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Coding Quiz: JavaScript</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body> 
+
+        <header>
+            <h4 id="view-high-scores">View High Scores</h4> 
+            <h4 class="timer">Time: <span id="timer"></span></h4>
+        </header>
+
+        <div id="starter-container" class="show">
+            <div class="container start">
+                <h1>Coding Quiz: JavaScript</h1>  
+                <button class="btn startend" id="start-game">Start Quiz</button>
+            </div>    
         </div>
-    </div> -->
-    <div id="question-one">
-        <h2>Which of the following would be used in CSS to change a class of an element while hovering your mouse over it?</h2>
-        <button class="answers" class="first-incorrect">___:active</button>
-        <button class="answers" id = "first-correct">___:hover</button>
-        <h2>Game Over</h2>
-        <p>Try Again</p>
-        <button id ="restart" type="button">Restart</button>
 
+        <div id="question-container" class="hide">
+            <div class="container questions">
+                <div id="question"></div>
+                <div id="answer-buttons" class="btn-grid"></div>
+            </div>
+        </div>
 
+        <div id="end-container" class="hide">
+           <div class="container end">
+            <div id=score-banner>
+                <h1>All done!</h1>
+            </div>  
+            <form id="initials-form" class="initials">
+              <p> Enter Initials:
+                <input type="text" name="initials" id="initials" class="text-input" />
+                <button class="btn startend" id="sumbit-score" type="submit">Submit</button> </p>
+              </form>
+            </div>
+        </div>
+
+        <div id="high-score-container" class="hide">
+          <div class="high-scores container">
+            <h1 class="high-score">High Scores</h1>
+            <ol id="high-score-list" class="score-list"></ol>
+        <div>
+            <button class="btn" id="go-back">Go back</button>
+            <button class="btn" id="clear-high-scores">Clear high scores</button>
+        </div>
+        </div>
     </div>
-    
 
-    
+    <div class="hide" id="correct">
+        <h2>Correct</h2>
+    </div>
+    <div class="hide" id="wrong">
+        <h2>Wrong </h2>
+    </div>
+
+    <script src="./assets/js/script.js"></script> 
 </body>
 </html>
