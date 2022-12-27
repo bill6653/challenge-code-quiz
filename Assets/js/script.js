@@ -110,7 +110,7 @@ var startGame = function() {
 var setQuestion = function() {
   resetAnswers()
   displayQuestion(arrayShuffledQuestions[QuestionIndex])
-  console.log()
+  
 }
 
 var resetAnswers = function() {
