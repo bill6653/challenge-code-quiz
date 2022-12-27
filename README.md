@@ -71,6 +71,9 @@ THEN I can save my initials and my score
 
 ## Mock-Up
 
+![Screen Shot 2022-12-26 at 9 09 53 PM](https://user-images.githubusercontent.com/112825724/209607049-964539de-c1f3-444b-b442-0461b2e5fd96.png)
+
+
 
 
 
