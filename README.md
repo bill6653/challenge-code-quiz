@@ -1,7 +1,7 @@
 # challenge-code-quiz
 A repository for a web application quiz related to javascript.
 
-Aceeptance Criteria:
+
 GIVEN I am taking a code quiz
 WHEN I click the start button
 THEN a timer starts and I am presented with a question
@@ -14,3 +14,7 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
 
+Mock Up
+![image](https://user-images.githubusercontent.com/112825724/209606494-98320331-5697-4d75-a7f2-91f423b720af.png)
+
+Deployed Application URL: 
